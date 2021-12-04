@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align:middle;
+}
+
+.container{
+  margin:0 auto;
+}
+
+  
+  
+/* TITLE SECTION */
+  .image-one{
+    width: 100%;
+    margin:0 0;
+  }
+  .title-text{
+    position:absolute;
+    top:10px;
+    right:7%;
+    font-size:6vw;
+    font-family: 'Michroma', sans-serif;
+    color:#001414;
+  }
+
+/*PARAGRAPH TEXT*/
+  .main-text1{
+    max-width:70ch;
+    margin:0 auto;
+    padding-bottom:40px;
+    padding-top:25px;
+    font-size:10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+  }
+  .main-text2{
+    max-width:70ch;
+    margin: 0 auto;
+    padding-bottom:40px;
+    font-size:10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.2;
+  }
+  
+/*IMAGE GRID*/
+  .image-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+    grid-template-rows: repeat(auto, 150px);
+    position: relative;
+  }
+  .one{
+    width:100%;
+  }
+
+  /*IMAGES IN GRID*/
+  .img1, .img2, .img3, .img4, .img5, .img6, .img7{
+    display: block;
+  }
+  .img1{
+    grid-row:1;
+    grid-column:1/4;
+  }
+  .img2{
+    grid-row:6;
+    grid-column:2/5;
+    z-index:-1;
+  }
+  .img3{
+    grid-row:11;
+    grid-column:1/4;
+    z-index:-2;
+  }
+  .img4{
+    grid-row:18;
+    grid-column:2/5;
+    z-index:-3;
+  }
+  .img5{
+    grid-row:21;
+    grid-column:1/4;
+    z-index:-4;
+  }
+  .img6{
+    grid-row:24;
+    grid-column:2/5;
+    z-index:-5;
+  }
+  .img7{
+    grid-row:31;
+    grid-column:1/5;
+    z-index:-6;
+  }
+
+/*COORDINATES AND DATES IN GRID*/
+  .text1, .text2, .text3, .text4, .text5, .text6, .text01{
+    font-size:8px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .text01{
+    grid-row:1;
+    padding-left:30%;
+  }
+  .text1{
+    grid-row:2;
+    grid-column:4/5;
+    max-width:30ch;
+    padding-left:30%;
+  }
+  .text2{
+    grid-row:8;
+    padding-left:30%;
+  }
+  .text3{
+    grid-row:15;
+    grid-column:4;
+    padding-left:30%;
+  }
+  .text4{
+    grid-row:20;
+    padding-left:30%;
+  }
+  .text5{
+    grid-row:23;
+    grid-column:4;
+    padding-left:30%;
+  }
+  .text6{
+    grid-row:28;
+    padding-left:30%;
+  }
+
+
+/*BUTTONS GRID*/
+.button-grid{
+  display:grid;
+  grid-template-rows:3%;
+  grid-template-columns:1fr 1fr 1fr;
+  padding-bottom: 2%;
+}
+.button-grid1{
+  display:grid;
+  grid-template-columns:50vw 50vw;
+  grid-template-rows: 3%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+/*BUTTONS IN GRID*/
+.contact-me-button{
+  grid-column:1;
+  grid-row: 1;
+}
+.Homepage{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.essential-button{
+  grid-row:1;
+  grid-column:1/2;
+}
+.southwestralia-button{
+  grid-row:1;
+  grid-column:2/3
+}
+.Appalachia-button{
+  grid-row:1;
+  grid-column:3/4;
+}
+.essential-button, .southwestralia-button, .Appalachia-button, .contact-me-button, .Homepage{
+  justify-self:center; 
+  align-self:center;
+  width:85%;
+  font-size: 1.5vw;
+  font-family:'Michroma', sans-serif;
+  height:6vw;
+}
+
+/*SOUTHWESTRALIA BUTTON*/
+.southwestralia-button{
+  text-decoration:none;
+  color:white;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:85%;
+  background-image:linear-gradient(to right, #00868B 10%, #001414 60%);
+  border-radius:20px;
+  z-index:1;
+}
+.southwestralia-button::before{
+  position:absolute;
+  content:"";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(to right, #00868B 100%, #021718 100%);
+  z-index:-1;
+  transition:opacity 0.7s linear;
+  opacity: 0;
+  border-radius:20px;
+}
+.southwestralia-button:hover::before{
+  opacity:1;
+}
+.southwestralia-button:focus::before{
+  opacity:1;
+}
+
+/*ESSENTIAL AUSTRALIA BUTTON*/
+.essential-button{
+  text-decoration:none;
+  color:white;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:85%;
+  background-image:linear-gradient(to right, #00868B 10%, #001414 60%);
+  border-radius:20px;
+  z-index:1;
+  border-radius:20px;
+}
+.essential-button::before{
+  position:absolute;
+  content:"";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(to right, #00868B 100%, #001414 100%);
+  z-index:-1;
+  transition:opacity 0.7s linear;
+  opacity: 0;
+  border-radius:20px;
+}
+.essential-button:hover::before{
+  opacity:1;
+}
+.essential-button:focus::before{
+  opacity:1;
+}
+
+/*APPALACHIA BUTTON*/
+.Appalachia-button{
+  text-decoration:none;
+  color: white;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:85%;
+  background-image:linear-gradient(to right, #00868B 10%, #001414 60%);
+  border-radius:20px;
+  z-index:1;
+}
+.Appalachia-button::before{
+  position:absolute;
+  content:"";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(to right, #00868B 100%, #001414 100%);
+  z-index:-1;
+  transition:opacity 0.7s linear;
+  opacity: 0;
+  border-radius:20px;
+}
+.Appalachia-button:hover::before{
+  opacity:1;
+}
+.Appalachia-button:focus::before{
+  opacity:1;
+}
+
+/*CONTACT ME BUTTON*/
+.contact-me-button{
+  text-decoration:none;
+  color:white;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:60%;
+  background-image:linear-gradient(to right, #00868B 10%, #001414 60%);
+  border-radius:20px;
+  z-index:1;
+}
+.contact-me-button::before{
+  position:absolute;
+  content:"";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(to right, #00868B 100%, #001414 100%);
+  z-index:-1;
+  transition:opacity 0.7s linear;
+  opacity: 0;
+  border-radius:20px;
+}
+.contact-me-button:hover::before{
+  opacity:1;
+}
+.contact-me-button:focus::before{
+  opacity:1;
+}
+
+  /*HOMEPAGE BUTTON*/
+ .Homepage{
+ text-decoration:none;
+  color:white;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 60%;
+  background-image:linear-gradient(to right, #00868B 10%, #001414 60%);
+  border-radius:20px;
+  z-index:1;
+}
+  .Homepage::before{
+    position:absolute;
+    content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:linear-gradient(to right, #00868B 100%, #001414 100%);
+    z-index:-1;
+    transition:opacity 0.7s linear;
+    opacity: 0;
+    border-radius:20px;
+  }
+  .Homepage:hover::before{
+    opacity:1;
+  }
+  .contact-me-button:focus::before{
+    opacity:1;
+  }
+
+
+
+
+/*MQs FOR TEXT*/
+  @media screen and (min-width: 800px) {
+    .main-text1, .main-text2 {
+      font-size: 17px;
+    }
+    .text1, .text2, .text3, .text4, .text5, .text6, .text01{
+      font-size: 17px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .main-text1, .main-text2 {
+      font-size: 20px;
+    }
+    .text1, .text2, .text3, .text4, .text5, .text6, .text01{
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .main-text1, .main-text2 {
+      font-size: 10px;
+    }
+    .text1, .text2, .text3, .text4, .text5, .text6, .text01{
+      font-size: 8px;
+    }
+  }
